@@ -16,7 +16,7 @@
 }
 
 body {
-	background-image: url(designs/brade/cyberpunk1.jpg);
+	background-image: url(designs/cyberpunk/backgrounds/cyberpunk-wallpaperflare.jpg);
 	background-size: cover;
 	background-attachment: fixed;
 }
@@ -102,11 +102,11 @@ select {
 }
 
 input[type=submit] {
-	color: white;
-	background: #27ae60;
-	padding: 4px 10px;
-	cursor: pointer;
-	border: 0px solid;
+	background-color: #ed143da1;
+	border-radius: 15px;
+	backdrop-filter: blur(5px);
+	text-shadow: none;
+	padding: 4px 12px;
 }
 
 input[type=submit]:hover {
@@ -128,7 +128,8 @@ input[type=radio] {
 }
 
 code {
-	background: #f0ffe1;
+	background: var(--primary);
+	backdrop-filter: blur(5px);
 	border: 1px dashed #d5f1b9;
 	padding: 2px 4px;
 	font-family: "Monaco", "Courier New";
@@ -141,8 +142,8 @@ code a:hover {
 table {
 	margin: 10px 0px;
 	border: none;
-  display: block;
-  padding: 1rem;
+	display: block;
+	padding: 1rem;
 	background-color: transparent;
 	backdrop-filter: blur(5px);
 }
@@ -355,25 +356,6 @@ input[name=logout]:hover {
 	color: white;
 }
 
-
-input[type=submit] {
-	font-size: 13px;
-	font-weight: normal;
-	-moz-border-radius: 1px;
-	-webkit-border-radius: 1px;
-	border-radius: 1px;
-	border: 0px solid #469df5;
-	padding: 4px 12px;
-	text-decoration: none;
-	background-color: #65ADC3;
-	color: #ffffff;
-	display: inline-block;
-	text-shadow: 0px 01px 0px #287ace;
-	-webkit-box-shadow: inset 0px 0px 0px 0px #cae3fc;
-	-moz-box-shadow: inset 0px 0px 0px 0px #cae3fc;
-	box-shadow: inset 0px 0px 0px 0px #cae3fc;
-}
-
 input[type=submit]:hover {
 	background-color: #34495e;
 	text-shadow: 0px 1px 0px #000;
@@ -401,6 +383,18 @@ i {
 	border-top: 7px solid var(--secondary);
 }
 
-.footer > div {
+.footer>div {
 	background-color: transparent;
+}
+
+.jush {
+  color: var(--on-primary);
+}
+
+.jush-js_key, .jush-js_key .jush-quo, .jush-js_key .jush-apo {
+    color: #69ffdb;
+}
+
+jush-php_quo, .jush-quo, .jush-quo_one, .jush-php_eot, .jush-apo, .jush-sql_apo, .jush-sqlite_apo, .jush-sql_quo, .jush-sql_eot {
+    color: #ffe64b;
 }
